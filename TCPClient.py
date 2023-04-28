@@ -5,7 +5,7 @@ serverAddressPort = ("127.0.0.1", 12000)
 inputServerAddressPort = tuple(input("Host/IP Port [Default: localhost 20001]: ").split())
 if inputServerAddressPort:
     print("teste")
-    serverAddressPort = inputServerAddressPort
+    serverAddressPort = (inputServerAddressPort[0], int(inputServerAddressPort[1]))
 i = 0
 while 1:
     # Create a TCP socket at client side
