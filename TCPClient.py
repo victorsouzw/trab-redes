@@ -2,7 +2,7 @@ from socket import *
 serverAddressPort = ("127.0.0.1", 12000)
 
 #Read server address and port
-inputServerAddressPort = tuple(input("Host/IP Port [Default: localhost 20001]: ").split())
+inputServerAddressPort = tuple(input("Host/IP Port [Default: localhost 12000]: ").split())
 if inputServerAddressPort:
     print("teste")
     serverAddressPort = (inputServerAddressPort[0], int(inputServerAddressPort[1]))
